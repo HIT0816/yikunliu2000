@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘义坤 - Yikun Liu - 哈尔滨工业大学博士研究生</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'hit-blue': '#4F46E5', // 明亮的紫色
+                        'accent-green': '#3B82F6', // 活泼的绿色作为辅助色
+                        'accent-yellow': '#f59e0b', // 温暖的黄色作为辅助色
+                    },
+                    fontFamily: {
+                        'noto-sans': ['"Noto Sans SC"', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+</head>
+<body class="font-noto-sans bg-blue-50 text-slate-900">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold text-hit-blue">刘义坤 - Yikun Liu</a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-700 hover:text-hit-blue transition-colors">关于</a>
+                    <a href="#education" class="text-slate-700 hover:text-hit-blue transition-colors">教育</a>
+                    <a href="#projects" class="text-slate-700 hover:text-hit-blue transition-colors">研究项目</a>
+                    <a href="#publications" class="text-slate-700 hover:text-hit-blue transition-colors">学术成果</a>
+                    <a href="#skills" class="text-slate-700 hover:text-hit-blue transition-colors">技能</a>
+                    <a href="#contact" class="text-slate-700 hover:text-hit-blue transition-colors">联系</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md hover:bg-blue-100">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 space-y-4">
+                <a href="#about" class="block text-slate-700 hover:text-hit-blue transition-colors py-2">关于</a>
+                <a href="#education" class="block text-slate-700 hover:text-hit-blue transition-colors py-2">教育</a>
+                <a href="#projects" class="block text-slate-700 hover:text-hit-blue transition-colors py-2">研究项目</a>
+                <a href="#publications" class="block text-slate-700 hover:text-hit-blue transition-colors py-2">学术成果</a>
+                <a href="#skills" class="block text-slate-700 hover:text-hit-blue transition-colors py-2">技能</a>
+                <a href="#contact" class="block text-slate-700 hover:text-hit-blue transition-colors py-2">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_25px_25px,rgba(59,130,246,1)_2px,transparent_0),radial-gradient(circle_at_75px_75px,rgba(16,185,129,1)_2px,transparent_0)] bg-[size:100px_100px]"></div>
+        </div>
+        
+        <div class="container mx-auto max-w-5xl z-10">
+            <div class="text-center">
+                <!-- Time Greeting -->
+                <p id="time-greeting" class="text-xl md:text-4xl text-hit-blue font-medium mb-6">
+                    Hi~ 下午好！
+                </p>
+                
+                <!-- Name with New Format -->
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-4">
+                    我是刘义坤<br>
+                    <span class="text-3xl md:text-5xl">I am Yikun Liu</span>
+                </h1>
+                
+                <!-- Additional Decorative Elements -->
+                <div class="flex justify-center gap-4 mb-8">
+                    <div class="w-3 h-3 bg-accent-green rounded-full"></div>
+                    <div class="w-3 h-3 bg-hit-blue rounded-full"></div>
+                    <div class="w-3 h-3 bg-accent-yellow rounded-full"></div>
+                </div>
+                
+                <p class="text-xl md:text-2xl text-slate-700 mb-6">
+                    哈尔滨工业大学 · 动力工程及工程热物理 · 博士研究生
+                </p>
+                <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-3xl mx-auto">
+                    致力于探索微纳尺度声子输运机理，利用机器学习驱动高导热材料开发。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#" class="px-8 py-3 bg-hit-blue text-white rounded-md hover:bg-blue-700 transition-colors font-medium shadow-md hover:shadow-lg">
+                        下载简历
+                    </a>
+                    <a href="#contact" class="px-8 py-3 bg-white text-hit-blue border border-hit-blue rounded-md hover:bg-blue-100 transition-colors font-medium shadow-md hover:shadow-lg">
+                        联系我
+                    </a>
+                </div>
+                
+                <!-- Additional Decorative Element -->
+                <div class="mt-16 w-24 h-1 bg-gradient-to-r from-transparent via-hit-blue to-transparent mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-hit-blue">教育经历</h2>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-hit-blue/20"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-16">
+                    <!-- Item 1 -->
+                    <div class="relative flex flex-col md:flex-row items-start md:items-center">
+                        <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0">
+                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-12 h-12 bg-hit-blue text-white rounded-full flex items-center justify-center">
+                                        <i class="fas fa-graduation-cap text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-slate-900">哈尔滨工业大学 (HIT)</h3>
+                                        <p class="text-slate-600">博士 - 动力工程及工程热物理</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-500 mb-3">2022 - 2027 (预计)</p>
+                                <p class="text-slate-700">长期从事于基于机器学习的高导热材料开发及微纳尺度器件热管理。</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:block w-1/2 md:pl-12"></div>
+                        <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-hit-blue rounded-full border-4 border-white shadow-lg"></div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="relative flex flex-col md:flex-row items-start md:items-center">
+                        <div class="hidden md:block w-1/2 md:pr-12"></div>
+                        <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-12 h-12 bg-accent-green text-white rounded-full flex items-center justify-center">
+                                        <i class="fas fa-university text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-slate-900">哈尔滨工业大学 (HIT)</h3>
+                                        <p class="text-slate-600">本科 - 能源与动力工程</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-500 mb-3">2018 - 2022</p>
+                                <p class="text-slate-700 font-medium mb-2">综合成绩 97.3，专业排名 1/179 (Top 0.5%)</p>
+                                <p class="text-slate-700">主要研究方向为声子输运及电声相互作用对金刚石热导率的影响。</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent-green rounded-full border-4 border-white shadow-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Projects Section -->
+    <section id="projects" class="py-20 px-4 bg-blue-50">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-hit-blue">研究项目</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-hit-blue/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-microscope text-hit-blue text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-3">
+                        超高热流密度微通道散热新原理及关键技术研究
+                    </h3>
+                    <p class="text-slate-500 mb-4">项目编号：2020YFA0709701</p>
+                    <p class="text-slate-700">
+                        负责高导热材料金刚石和立方砷化硼 (c-BAs) 声子热输运机理分析及导热性能提高研究。
+                    </p>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-accent-green/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-diamond text-accent-green text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-3">
+                        煤基金刚石的本征热导率极限探索
+                    </h3>
+                    <p class="text-slate-500 mb-4">哈工大原创前沿探索基金-A类</p>
+                    <p class="text-slate-700">
+                        负责金刚石材料制备及本征热导率计算。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Outcomes Section -->
+    <section id="publications" class="py-20 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-hit-blue">学术成果</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Papers -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-file-alt text-hit-blue text-2xl"></i>
+                        <h3 class="text-xl font-semibold text-slate-900">论文 (SCI)</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="text-slate-700">
+                            <span class="font-medium">1.</span> Machine learning-driven insights into biaxial strain-induced anomalous thermal conductivity enhancement of boron arsenide
+                        </li>
+                        <li class="text-slate-700">
+                            <span class="font-medium">2.</span> Simulation Study on Multi-scales Anisotropic Thermal Conductivity of Boron Arsenide Films Based on Machine Learning Potential
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Patents -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-certificate text-accent-yellow text-2xl"></i>
+                        <h3 class="text-xl font-semibold text-slate-900">发明专利</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="text-slate-700">
+                            <span class="font-medium">1.</span> 《一种基于等离子体-激光复合场辅助的煤直接制金刚石方法》
+                        </li>
+                        <li class="text-slate-700">
+                            <span class="font-medium">2.</span> 《一种高导热材料薄膜热导率的测量装置及方法》
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Software Copyrights -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-code text-accent-green text-2xl"></i>
+                        <h3 class="text-xl font-semibold text-slate-900">软件著作权</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="text-slate-700">
+                            <span class="font-medium">1.</span> 《基于布里渊区投影法区分声子散射过程计算软件》
+                        </li>
+                        <li class="text-slate-700">
+                            <span class="font-medium">2.</span> 《含声子-点缺陷散射的晶格热导率计算软件》
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 bg-blue-50">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-hit-blue">技能专长</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Experiment -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-6 flex items-center gap-3">
+                        <i class="fas fa-flask text-hit-blue"></i>
+                        实验技能
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-hit-blue/10 text-hit-blue rounded-full text-sm">
+                            微波等离子体增强气相沉积 (MPCVD)
+                        </span>
+                        <span class="px-4 py-2 bg-hit-blue/10 text-hit-blue rounded-full text-sm">
+                            高质量金刚石制备
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Computation -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-6 flex items-center gap-3">
+                        <i class="fas fa-calculator text-accent-green"></i>
+                        计算方法
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-accent-green/10 text-accent-green rounded-full text-sm">
+                            VASP
+                        </span>
+                        <span class="px-4 py-2 bg-accent-green/10 text-accent-green rounded-full text-sm">
+                            Quantum Espresso (QE)
+                        </span>
+                        <span class="px-4 py-2 bg-accent-green/10 text-accent-green rounded-full text-sm">
+                            First-principles
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Simulation -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-6 flex items-center gap-3">
+                        <i class="fas fa-project-diagram text-accent-yellow"></i>
+                        模拟技术
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-accent-yellow/10 text-accent-yellow rounded-full text-sm">
+                            LAMMPS
+                        </span>
+                        <span class="px-4 py-2 bg-accent-yellow/10 text-accent-yellow rounded-full text-sm">
+                            Molecular Dynamics (MD)
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Dev & AI -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-6 flex items-center gap-3">
+                        <i class="fas fa-robot text-hit-blue"></i>
+                        开发与AI
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-hit-blue/10 text-hit-blue rounded-full text-sm">
+                            Machine Learning Potential (MLP)
+                        </span>
+                        <span class="px-4 py-2 bg-hit-blue/10 text-hit-blue rounded-full text-sm">
+                            Python Scripting
+                        </span>
+                        <span class="px-4 py-2 bg-hit-blue/10 text-hit-blue rounded-full text-sm">
+                            Thermal Conductivity Analysis
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-hit-blue">联系方式</h2>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
+                <div class="space-y-8">
+                    <!-- WeChat -->
+                    <div class="flex items-center gap-6">
+                        <div class="w-16 h-16 bg-hit-blue/10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-weixin text-hit-blue text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-slate-900 mb-1">微信</h3>
+                            <div class="flex items-center gap-3">
+                                <p class="text-slate-700 copy-text" data-copy="18179686010">18179686010</p>
+                                <button class="text-sm text-hit-blue hover:text-blue-700">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="flex items-center gap-6">
+                        <div class="w-16 h-16 bg-accent-green/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-envelope text-accent-green text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-slate-900 mb-1">邮箱</h3>
+                            <div class="flex items-center gap-3">
+                                <p class="text-slate-700 copy-text" data-copy="2071735594@qq.com">2071735594@qq.com</p>
+                                <button class="text-sm text-accent-green hover:text-green-700">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- GitHub -->
+                    <div class="flex items-center gap-6">
+                        <div class="w-16 h-16 bg-accent-yellow/10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-github text-accent-yellow text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-slate-900 mb-1">GitHub</h3>
+                            <a href="https://github.com/HIT0816" target="_blank" class="text-hit-blue hover:text-blue-700 flex items-center gap-2">
+                                <span>github.com/HIT0816</span>
+                                <i class="fas fa-external-link-alt text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 bg-hit-blue text-white">
+        <div class="container mx-auto max-w-5xl">
+            <div class="text-center">
+                <p class="text-white/90">
+                    © 2025 Yikun Liu. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-8 right-8 px-6 py-3 bg-hit-blue text-white rounded-md shadow-lg transform translate-y-20 opacity-0 transition-all duration-300 z-50">
+        复制成功！
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
